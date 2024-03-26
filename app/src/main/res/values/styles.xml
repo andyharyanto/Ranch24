@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="RanchFullScreenDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryDark">@color/green_primary</item>
+        <item name="colorAccent">@color/green_primary</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="RanchLoadingDialogStyle" parent="RanchFullScreenDialogStyle">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="RanchFullScreenDialogAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slide_down</item>
+    </style>
+</resources>
